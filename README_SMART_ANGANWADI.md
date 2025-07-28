@@ -12,22 +12,6 @@ A prototype web application built using the MERN stack to streamline the operati
 
 > *Note: Facial recognition was presented as a demo, not a fully functional module.*
 
-## 🧩 Features Planned (Not Yet Implemented)
-
-- 📡 **Offline Support with Real-Time Sync**
-- 🍲 **Ration Optimization Module**
-- 📊 **Data Analytics and Reporting**
-- 🔔 **Smart Notifications & Alerts**
-
-## 📂 Project Structure
-
-```
-client/      → React frontend  
-server/      → Node.js + Express backend  
-models/      → Mongoose schemas for MongoDB  
-routes/      → API endpoints  
-```
-
 ## 🛠️ Tech Stack
 
 - MongoDB
@@ -37,10 +21,6 @@ routes/      → API endpoints
 - (Planned) TensorFlow.js or face-api.js for facial recognition
 - (Planned) Service Workers & IndexedDB for offline capability
 
-## 📸 Screenshots
-
-> You can add screenshots in this section  
-> Example: Login page, dashboard, facial recognition demo
 
 ## ⚙️ Setup Instructions
 
@@ -72,10 +52,7 @@ This project is in the **prototype phase**. Core functionality is working, while
 
 ## 🙌 Contributors
 
-- **Your Name** — Developer  
-- *Team Members (if any)*
-
-## 📅 Originally Developed For
+- Siddharth Kakoti — Developer  
 
 Hackathon Submission | Dhemaji Engineering College  
 Aimed at improving public service delivery through smart technology.
