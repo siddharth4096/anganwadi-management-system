@@ -12,38 +12,11 @@ A prototype web application built using the MERN stack to streamline the operati
 > *Note: Facial recognition was presented as a demo, not a fully functional module.*
 
 ## 🛠️ Tech Stack
-
-- MongoDB
 - Express.js
 - React.js
 - Node.js
 - (Planned) TensorFlow.js or face-api.js for facial recognition
 - (Planned) Service Workers & IndexedDB for offline capability
-
-
-## ⚙️ Setup Instructions
-
-1. Clone the repo  
-   ```
-   git clone https://github.com/your-username/smart-anganwadi.git
-   cd smart-anganwadi
-   ```
-
-2. Install backend dependencies  
-   ```
-   cd server
-   npm install
-   ```
-
-3. Install frontend dependencies  
-   ```
-   cd ../client
-   npm install
-   ```
-
-4. Run the app  
-   - Backend: `npm start` in `server/`  
-   - Frontend: `npm start` in `client/`
 
 ## 📌 Project Status
 
