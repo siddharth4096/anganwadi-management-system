@@ -1,0 +1,24 @@
+/* assets/css/animations.css */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  .hero {
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .cta-button {
+    animation: slideIn 1s ease-in-out;
+  }
+  
+  /* Hover Effects */
+  .cta-button:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }

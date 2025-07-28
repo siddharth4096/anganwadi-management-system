@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Worker Dashboard - Smart Anganwadi</title>
+  <link rel="stylesheet" href="./css/worker-dashboard.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="./images/logo-removebg-preview.png" alt="Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="worker-dashboard.html">Dashboard</a></li>
+      </ul>
+    </nav>
+    <!-- Notification Button -->
+    <div class="notification-container">
+      <button class="notification-button">
+        🔔 Notifications
+        <span class="notification-count">3</span>
+      </button>
+      <!-- Notification Dropdown -->
+      <div class="notification-dropdown">
+        <div class="notification-item">
+          <p class="notification-text">Ration distribution on 5th November.</p>
+          <p class="notification-time">2 hours ago</p>
+          <button class="mark-as-read">✔️</button>
+        </div>
+        <div class="notification-item">
+          <p class="notification-text">Health checkup scheduled for 10th November.</p>
+          <p class="notification-time">1 day ago</p>
+          <button class="mark-as-read">✔️</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="dashboard">
+    <h1>Worker Dashboard</h1>
+
+    <!-- Attendance Summary -->
+    <div class="cards-container">
+      <div class="card">
+        <h2>Total Children</h2>
+        <p class="value">120</p>
+        <p class="description">Registered in Anganwadi</p>
+      </div>
+      <div class="card">
+        <h2>Attendance Today</h2>
+        <p class="value">95</p>
+        <p class="description">Children Present</p>
+      </div>
+      <div class="card">
+        <h2>Ration Distributed</h2>
+        <p class="value">85%</p>
+        <p class="description">Of Total Requirement</p>
+      </div>
+    </div>
+
+    <!-- Attendance Pie Chart -->
+    <div class="charts-container">
+      <div class="chart-card">
+        <h2>Attendance Distribution</h2>
+        <div class="chart-wrapper">
+          <canvas id="workerAttendanceChart"></canvas>
+        </div>
+      </div>
+      <div class="chart-card">
+        <h2>Ration Distribution</h2>
+        <div class="chart-wrapper">
+          <canvas id="workerRationChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mark Attendance and Distribute Ration Buttons -->
+    <div class="actions">
+      <button class="cta-button mark-attendance">Mark Attendance</button>
+      <button class="cta-button distribute-ration">Distribute Ration</button>
+    </div>
+
+    <!-- Supervisor Reporting -->
+    <div class="section supervisor-reporting">
+      <h2>Supervisor Reporting</h2>
+      <form id="reportForm">
+        <textarea id="report" placeholder="Enter your report or issue..." required></textarea>
+        <button type="submit">Submit Report</button>
+      </form>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2023 Smart Anganwadi. All rights reserved.</p>
+  </footer>
+  <script src="./js/worker-dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supervisor Dashboard - Smart Anganwadi</title>
+  <link rel="stylesheet" href="./css/supervisor-dashboard.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="./images/logo-removebg-preview.png" alt="Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="supervisor-dashboard.html">Dashboard</a></li>
+      </ul>
+    </nav>
+    <!-- Notification Button -->
+    <div class="notification-container">
+      <button class="notification-button">
+        🔔 Notifications
+        <span class="notification-count">2</span>
+      </button>
+      <!-- Notification Dropdown -->
+      <div class="notification-dropdown">
+        <div class="notification-item">
+          <p class="notification-text">New report submitted by Worker A.</p>
+          <p class="notification-time">1 hour ago</p>
+          <button class="mark-as-read">✔️</button>
+        </div>
+        <div class="notification-item">
+          <p class="notification-text">Ration distribution completed at Centre X.</p>
+          <p class="notification-time">3 hours ago</p>
+          <button class="mark-as-read">✔️</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="dashboard">
+    <h1>Supervisor Dashboard</h1>
+
+    <!-- Summary Cards -->
+    <div class="cards-container">
+      <div class="card">
+        <h2>Total Centres</h2>
+        <p class="value">10</p>
+        <p class="description">Under Supervision</p>
+      </div>
+      <div class="card">
+        <h2>Issues Reported</h2>
+        <p class="value">5</p>
+        <p class="description">This Month</p>
+      </div>
+      <div class="card">
+        <h2>Visits Completed</h2>
+        <p class="value">8</p>
+        <p class="description">This Month</p>
+      </div>
+    </div>
+
+    <!-- Charts -->
+    <div class="charts-container">
+      <div class="chart-card">
+        <h2>Issue Distribution</h2>
+        <div class="chart-wrapper">
+          <canvas id="issueChart"></canvas>
+        </div>
+      </div>
+      <div class="chart-card">
+        <h2>Attendance Trend</h2>
+        <div class="chart-wrapper">
+          <canvas id="attendanceTrendChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- Log Visit Button -->
+    <div class="actions">
+      <button class="cta-button log-visit">Log Visit</button>
+    </div>
+
+    <!-- Report Issue Form -->
+    <div class="section report-issue">
+      <h2>Report Issue</h2>
+      <form id="issueForm">
+        <textarea id="issue" placeholder="Enter the issue details..." required></textarea>
+        <button type="submit">Submit Issue</button>
+      </form>
+    </div>
+
+    <!-- View Reports -->
+    <div class="section view-reports">
+      <h2>View Reports</h2>
+      <div class="reports-list">
+        <div class="report-item">
+          <p class="report-text">Worker A reported a shortage of ration at Centre X.</p>
+          <p class="report-time">2 days ago</p>
+        </div>
+        <div class="report-item">
+          <p class="report-text">Worker B reported a broken water supply at Centre Y.</p>
+          <p class="report-time">5 days ago</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2023 Smart Anganwadi. All rights reserved.</p>
+  </footer>
+  <script src="./js/supervisor-dashboard.js"></script>
+</body>
+</html>

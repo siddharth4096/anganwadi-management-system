@@ -1,0 +1,188 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  }
+  
+  header .logo img {
+    height: 40px;
+  }
+  
+  header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  header nav ul li a:hover {
+    color: #ffeb3b; /* Yellow on hover */
+  }
+  
+  /* Login Section */
+  .login {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .login h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+  }
+  
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .login-method {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1 1 300px; /* Flex basis for responsiveness */
+  }
+  
+  .login-method:hover {
+    transform: translateY(-5px); /* Lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  }
+  
+  .login-method h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .camera-feed {
+    margin-bottom: 20px;
+    
+  }
+  
+  .camera-feed video, .camera-feed canvas {
+    border-radius: 10px;
+    width: 100%; /* Make video and canvas responsive */
+    height: auto;
+  }
+  
+  .cta-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%; /* Full width on smaller screens */
+  }
+  
+  .cta-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  
+  .divider {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #666;
+    width: 100%; /* Full width on smaller screens */
+    text-align: center;
+  }
+  
+  .divider::before, .divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Form Styles */
+  .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .login h1 {
+      font-size: 28px; /* Smaller heading for tablets */
+    }
+  
+    .login-method {
+      flex: 1 1 100%; /* Full width on tablets */
+    }
+  
+    .cta-button {
+      font-size: 14px; /* Smaller button text */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .login h1 {
+      font-size: 24px; /* Smaller heading for mobile */
+    }
+  
+    .login-method h2 {
+      font-size: 20px; /* Smaller subheading for mobile */
+    }
+  
+    .form-group input {
+      font-size: 12px; /* Smaller input text for mobile */
+    }
+  
+    .cta-button {
+      padding: 8px 16px; /* Smaller button padding */
+    }
+  }

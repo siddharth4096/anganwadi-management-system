@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Children Dashboard - Smart Anganwadi</title>
+  <link rel="stylesheet" href="./css/children-dashboard.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="./images/logo-removebg-preview.png" alt="Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="children-dashboard.html">Dashboard</a></li>
+      </ul>
+    </nav>
+
+    <!-- Notification Button and Dropdown -->
+<div class="notification-container">
+  <button class="notification-button">
+    🔔 Notifications
+    <span class="notification-count">3</span> <!-- Notification count -->
+  </button>
+  <!-- Notification Dropdown -->
+  <div class="notification-dropdown">
+    <div class="notification-item">
+      <p class="notification-text">Ration distribution on 5th November.</p>
+      <p class="notification-time">2 hours ago</p>
+      <button class="mark-as-read">✔️</button> <!-- Mark as read button -->
+    </div>
+    <div class="notification-item">
+      <p class="notification-text">Health checkup scheduled for 10th November.</p>
+      <p class="notification-time">1 day ago</p>
+      <button class="mark-as-read">✔️</button>
+    </div>
+    <div class="notification-item">
+      <p class="notification-text">Festival celebration on 15th November.</p>
+      <p class="notification-time">3 days ago</p>
+      <button class="mark-as-read">✔️</button>
+    </div>
+  </div>
+</div>
+
+  </header>
+  <main class="dashboard">
+    <h1>Children Dashboard</h1>
+
+    <!-- Attendance Tracking -->
+    <div class="cards-container">
+      <div class="card">
+        <h2>Your Attendance</h2>
+        <p class="value">95%</p>
+        <p class="description">This Month</p>
+      </div>
+      <div class="card">
+        <h2>Ration Received</h2>
+        <p class="value">100%</p>
+        <p class="description">This Month</p>
+      </div>
+    </div>
+
+    <!-- Attendance Pie Chart -->
+    <div class="charts-container">
+      <div class="chart-card">
+        <h2>Your Attendance</h2>
+        <div class="chart-wrapper">
+          <canvas id="attendanceChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- Upcoming Activities -->
+    <div class="section upcoming-activities">
+      <h2>Upcoming Activities</h2>
+      <ul>
+        <li>Health Checkup - 5th November</li>
+        <li>Vaccination Drive - 10th November</li>
+        <li>Festival Celebration - 15th November</li>
+      </ul>
+    </div>
+
+  
+
+
+    <!-- Feedback or Complaints -->
+    <div class="section feedback-form">
+      <h2>Feedback/Complaints</h2>
+      <form id="feedbackForm">
+        <textarea id="feedback" placeholder="Enter your feedback or complaint..." required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <!-- Educational Content -->
+    <div class="section educational-content">
+      <h2>Educational Content</h2>
+      <ul>
+        <li><a href="#">Interactive Learning Games</a></li>
+        <li><a href="#">Educational Videos</a></li>
+        <li><a href="#">Stories for Kids</a></li>
+      </ul>
+    </div>
+
+    <!-- Parent/Guardian Information -->
+    <div class="section parent-info">
+      <h2>Parent/Guardian Information</h2>
+      <p>Name: John Doe</p>
+      <p>Contact: +91 9876543210</p>
+      <p>Relationship: Father</p>
+    </div>
+
+    <!-- Immunization Schedule -->
+    <div class="section immunization-schedule">
+      <h2>Immunization Schedule</h2>
+      <ul>
+        <li>Polio Vaccine - 5th November</li>
+        <li>MMR Vaccine - 10th November</li>
+      </ul>
+    </div>
+
+    <!-- Meal Plan -->
+    <div class="section meal-plan">
+      <h2>Weekly Meal Plan</h2>
+      <ul>
+        <li>Monday: Rice, Dal, Vegetables</li>
+        <li>Tuesday: Roti, Sabzi, Curd</li>
+      </ul>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2023 Smart Anganwadi. All rights reserved.</p>
+  </footer>
+  <script src="./js/children-dashboard.js"></script>
+</body>
+</html>
